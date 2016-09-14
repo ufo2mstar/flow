@@ -44,8 +44,8 @@ function setup_editor(div) {
             diagram_div.html('');
 
             var options = {
-                theme: theme_div.val(),
-                scale: 2
+                theme: 'simple', // need to figure out bootstrap buttons!
+                scale: 1
             };
 
             // Draw
