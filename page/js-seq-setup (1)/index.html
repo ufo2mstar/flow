@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>js-seq-setup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet prefetch'
+          href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <section id="demo">
+        <table align="center" class="inner">
+            <tr id="try">
+                <td class="diagram"></td>
+                <td>
+                    <div class="editor-wrapper">
+                        <div class="editor">
+                            Title: Here is a title
+                            A->B: Normal line
+                            B-->C: Dashed line
+                            C->>D: Open arrow
+                            D-->>A: Dashed open arrow
+                            Note left of A: Note to the\n left of A
+                            Note right of A: Note to the\n right of A
+                            Note over A: Note over A
+                            Note over A,B: Note over both A and B
+                        </div>
+                    </div>
+                    Style:
+                    <select class="theme">
+                        <option value="simple" selected>Default</option>
+                        <option value="hand">Hand drawn</option>
+                    </select>
+                    | <a href="#" class="download">Download as SVG</a>
+                </td>
+            </tr>
+
+
+
+            <script src="js/jquery.min.js"></script>
+
+            <!-- Needed for the text editor -->
+            <script src="https://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript"
+                    charset="utf-8"></script>
+
+            <script src="js/underscore-min.js"></script>
+            <script src="js/raphael-min.js"></script>
+
+            <script src="js/sequence-diagram-min.js"></script>
+            <!--script src="../js-sequence-diagrams/build/sequence-diagram.js"></script-->
+            <script src="js/svginnerhtml.min.js"></script>
+
+            <script src="js/content.js" type="text/javascript">
+
+            </script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.1/raphael.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js'></script>
+<script src="js/index.js"></script>
+</body>
+</html>

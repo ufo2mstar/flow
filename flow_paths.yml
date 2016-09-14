@@ -1,0 +1,18 @@
+Outgoing: Arr has outgoin somethings?
+# condition
+#  SEE: out_num
+## action
+#  SET: outgoing_somethings
+#    Y: out_num
+#    N: 0
+## next to
+#  GOTO: Incoming
+
+Incoming:
+  TEXT: Arr has incoming somethings?
+  SEE: in_num
+  SET: incoming_somethings
+  Y: in_num
+  N: 0
+  GOTO: PurdExpo
+
