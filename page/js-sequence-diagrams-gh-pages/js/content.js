@@ -87,5 +87,18 @@ $(document).ready(function () {
     // load_init_text($('#editor'), txt);
     // Setup all the editors
     setup_editor($('#try'));
+
+    mermaid.initialize({startOnLoad:true});
+
 });
 
+function merm() {
+    var config = {
+        startOnLoad:true,
+        flowchart:{
+            useMaxWidth:false,
+            htmlLabels:true
+        }
+    };
+    mermaid.initialize(config);
+}
