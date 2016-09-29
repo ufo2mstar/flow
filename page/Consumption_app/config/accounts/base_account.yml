@@ -1,0 +1,9 @@
+ACCOUNT:
+# init fields
+  - PledgesFrom
+  - PledgesTo
+  - etc
+# inferred fields (set during the flow? or kinda implied fields!)
+  - outgoingPledges
+  - incomingPledges
+  - etc

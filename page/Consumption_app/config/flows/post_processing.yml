@@ -1,0 +1,13 @@
+# here are all the assumptions going into the yml flow file creation..
+# the flow render code is going to be general purpose based on the condition mentioned here
+NODE_NAME:
+  text: the question of message desc for printing/logging
+  case: check condition.. not necessirily boolean.. as long as the when case handles all the conditions
+  when:
+    Y: # or true or something 'truthy'.. yes, ruby has truthyness.. pretty cool!
+      action: simple assignment / method call!
+      nav: next_node
+    N:
+      action:
+      nav:
+  format: optional for printing/logging
