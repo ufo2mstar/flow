@@ -19,15 +19,14 @@ class ConsumptionApp
   end
 
   def init_accounts *account_hash_ary
-    account_hash_ary.each do
-      account_hash
+    account_hash_ary.each do |account_hash|
       account_name = account_hash.keys.first # string
       account_params = @accunt_renderer.objectify account_hash.values.first #hash
       @accounts << account_name
     end
   end
 
-  def flow! flow_path # , accounts??
+  def consume! flow_path # , accounts??
 # todo: execute the flow here!.. accounts and properties are assigned at this level
   end
 
