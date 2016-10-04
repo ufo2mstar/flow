@@ -1,0 +1,7 @@
+source 'https://rubygems.org' do
+
+gem 'rake'
+gem 'watir'
+gem 'yard-cucumber2'
+
+end
